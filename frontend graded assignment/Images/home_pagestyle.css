@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background-color: #575252;
+    color: white;
+}
+
+h1,
+h4 {
+    text-align: center;
+    background-color: #575252;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    background-color: #777575;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; 
+    display: block; 
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #d3cfcf;
+    z-index: 1;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li:hover {
+    background-color: white;
+}
+
+nav ul li:hover a {
+    color: steelblue;
+}
+
+section > p {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.products-container {
+    text-align: center; 
+}
+
+.products {
+    width: 175px;
+    
+    height: 310px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(162, 181, 243, 0.2);
+    box-shadow: 1px;
+    border-radius: 3px;
+    line-height: 30px;
+    margin: 20px 3px 20px 8px
+}
+
+.products p {
+    color: steelblue;
+}
+
+#head {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.cart {
+    min-width: 140 px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(178, 178, 245,0.4);
+    border-color:blue;
+}
+
+.cart a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+
+.pro_img {
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+}
+
+.cart:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+    color: black;
+}
+
+.products:hover {
+    scale: 100%;
+
+}
+
+
+footer {
+    background-color: #575252;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media only screen and (min-width: 235px) {
+    nav ul ul {
+        top: 40px;
+    }
+}
+
+@media only screen and (min-width: 355px) {
+    nav ul ul {
+        top: 40px;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    h1 {
+        padding: 18px;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h1 {
+        padding: 20px;
+        font-size: 34px;
+    }
+}
